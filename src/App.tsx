@@ -233,6 +233,9 @@ function SkillsBlock({ groups }: { groups: SkillGroup[] }) {
 
 function App() {
   const { profile, summary, experience, skills } = CV_DATA
+  React.useEffect(() => {
+    document.title = `${profile.name} - ${profile.title}`
+  }, [profile.name, profile.title])
 
   return (
     <main className="cv">
