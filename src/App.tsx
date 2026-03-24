@@ -35,32 +35,37 @@ interface Profile {
 
 const CV_DATA = {
   profile: {
-    name: 'Aleksei (Alex Novak) Dmitriev',
-    alt: 'Aleksei Dmitriev',
-    title: 'Staff Software Engineer',
+    name: 'Aleksei Dmitriev',
+    alt: '',
+    title: 'Senior Frontend Software Engineer',
     email: 'heyalexnovak@gmail.com',
     github: 'github.com/opcode0x',
     website: 'opcode0x.com',
     location: 'Porto, Portugal',
   } satisfies Profile,
 
-  summary:
-    "Staff Software Engineer focused on building decentralized infrastructure, open-source developer tools, and scalable web applications. Expert in bridging complex technical requirements with maintainable, high-performance engineering standards.",
+  summary: "Senior Frontend Engineer focused on building fast, user-friendly web applications. Experienced in delivering high-quality interfaces, improving performance, and collaborating closely with product teams to ship reliable features.",
   experience: [
     {
       company: 'MIDL',
       description: 'Execution environment that brings EVM-compatible smart contracts to the Bitcoin network, enabling developers to build and run native decentralized applications (dApps) without bridges or third parties.',
       positions: [
         {
-          role: 'Staff Software Engineer',
+          role: 'Senior Frontend Software Engineer',
           period: 'May 2024 – Present',
           bullets: [
-            <><strong>Architected and launched the official TypeScript SDK <a className="cv-repo-link" href="https://github.com/midl-xyz/midl-js" target="_blank" rel="noreferrer"><GitHubIcon />midl-xyz/midl-js</a>:</strong> Designed the public-facing API and comprehensive documentation for the primary open-source gateway to the MIDL protocol, which includes native Bitcoin Core utilities. Driven to over 3,000 monthly downloads and utilized as the core development tool for global events, including a Hong Kong hackathon where I served as an on-site technical mentor.</>,
-            <><strong>Established engineering and quality standards:</strong> Defined mandatory testing rules and CI thresholds for the engineering team. Mentored developers on effective testing practices for cryptography, emphasizing actual logic coverage over mocking to ensure protocol security.</>,
-            <><strong>Built robust CI/CD and E2E testing pipelines:</strong> Engineered end-to-end protocol validation testing using Playwright and Testcontainers, significantly accelerating development cycles and increasing trust in production releases.</>,
-            <><strong>Led infrastructure migration to ARM architecture:</strong> Overhauled the build system and aligned the core codebase to support native ARM execution. Transitioned the AWS Kubernetes (k8s) infrastructure using a GitOps approach with Helm and Karpenter for automated node scaling, reducing total cloud costs by ~15%.</>,
-            <><strong>Collaborated on core node development and audit preparation:</strong> Partnered with the engineering team to align the MIDL node (Golang) codebase with validator requirements ahead of security audits. Also contributed to building reference dApps using Next.js and Vite to support ecosystem developers.</>,
-          ],
+            <>
+              <strong>Built and launched a TypeScript SDK:</strong> Designed a developer-friendly API used to integrate web applications, focusing on usability and developer experience (3,000+ monthly downloads).
+            </>,
+            <>
+              <strong>Developed web applications and developer tools:</strong> Built and maintained applications using Next.js, improving performance and user experience for developers.
+            </>,
+            <>
+              <strong>Improved frontend quality and reliability:</strong> Introduced testing practices and end-to-end testing with Playwright, increasing confidence in releases.
+            </>,
+            <>
+              Optimized performance and delivery: Improved development speed and release stability through better tooling and CI processes.
+            </>],
         },
       ],
     },
@@ -69,23 +74,31 @@ const CV_DATA = {
       description: "A scalable, Polygon CDK-based network focused on NFTs, DeFi, privacy, and ZK-powered dApps.",
       positions: [
         {
-          role: 'Staff Software Engineer',
+          role: 'Staff Frontend Software Engineer',
           period: 'Feb 2023 – May 2024',
           bullets: [
-            <><strong>Led ecosystem migration</strong> of the company’s suite of dApps to a new Polygon CDK-based networking,directly reducing transaction costs for the business and users.</>,
-            <><strong>Bridge Architecture:</strong> Designed and engineered a secure cross-chain token bridge to safely handle user asset transfers between networks.</>,
-            <><strong>Frontend Standardization:</strong> Introduced and enforced Feature-Sliced Design (FSD) across all frontend repositories, reducing technical debt and cutting onboarding time for new hires.</>,
+            <><strong>Led migration of multiple web applications</strong> to a new platform, improving performance and reducing transaction costs for users.</>,
+            <><strong>Built and maintained key product features across several dApps,</strong> focusing on usability, responsiveness, and reliability.</>,
+            <><strong>Standardized frontend architecture</strong> across projects using Feature-Sliced Design (FSD), reducing technical debt and improving developer onboarding speed</>,
+            <>Designed and implemented a cross-chain asset transfer experience, ensuring secure and smooth user interactions</>,
           ],
         },
         {
-          role: 'Senior Software Engineer',
+          role: 'Senior Frontend Software Engineer',
           period: 'Jan 2022 – Feb 2023',
           bullets: [
-            <><strong>Developed the frontend for multiple EVM-compatible dApps,</strong> including an NFT marketplace, a rental solution, and DeFi tools, using React, Next.js, and TypeScript.</>,
-            <><strong>Set up real-time blockchain data indexing</strong> using The Graph (Subgraph) and Squid, adding custom data handlers and caching.</>,
-            <><strong>Implemented server-side rendering (SSR)</strong> for the marketplace and landing pages to improve SEO and performance.</>,
-            <><strong>Maintained and improved CI pipelines and test coverage</strong> to make deployments more reliable.</>,
-          ],
+            <>
+              Developed user-facing applications including an NFT marketplace, rental platform, and DeFi tools using React, Next.js, and TypeScript.
+            </>,
+            <>
+              Improved application performance and SEO by implementing server-side rendering (SSR) and optimizing data loading strategies.
+            </>,
+            <>
+              Built real-time data-driven interfaces by integrating indexed data services, ensuring fast and responsive user experiences.
+            </>,
+            <>
+              Improved reliability of releases by enhancing testing practices and CI pipelines.
+            </>]
         },
       ],
     },
@@ -100,8 +113,8 @@ const CV_DATA = {
           bullets: [
             <><strong>Cross-Team Architecture:</strong> Actively collaborated in architectural and design discussions with cross-functional teams to ensure the component library met the distinct needs of various internal engineering groups and drove organization-wide adoption.</>,
             <><strong>Internal Tooling:</strong> Developed and maintained internal developer tools and documentation portals to support the frontend organization using Node.js, Nest.js, and Strapi CMS.</>,
-            <><strong>Monorepo & Testing Standards:</strong> Managed the internal tooling codebase as a monorepo using Yarn Workspaces and enforced high test coverage across all components using Jest.</>,
-            <><strong>Mentorship:</strong> Mentored junior engineers on frontend best practices, component architecture, and seamless design system integration.</>,
+            <>Monorepo & Testing Standards: Managed the internal tooling codebase as a monorepo using Yarn Workspaces and enforced high test coverage across all components using Jest.</>,
+            <>Mentorship: Mentored junior engineers on frontend best practices, component architecture, and seamless design system integration.</>,
           ],
         },
       ],
@@ -140,10 +153,10 @@ const CV_DATA = {
 
   skills: [
     { label: 'Languages', items: ['TypeScript', 'JavaScript', 'Golang'] },
-    { label: 'Frontend', items: ['React', 'Next.js', 'FSD', 'Design Systems', 'A11y', 'Tailwind', 'PandaCSS', 'SSR/SSG'] },
-    { label: 'Web3', items: ['EVM / dApps', 'Bitcoin Core', 'Solidity', 'Ethers.js', 'Viem', 'Wagmi'] },
-    { label: 'Infra', items: ['AWS', 'Kubernetes', 'Helm', 'Docker', 'Terraform', 'Karpenter', 'GitOps'] },
+    { label: 'Frontend', items: ['React', 'Next.js', 'FSD', 'Design Systems', 'Accessibility (A11y)', 'Tailwind', 'PandaCSS', 'SSR/SSG'] },
     { label: 'Tooling', items: ['PNPM', 'Playwright', 'Testcontainers', 'Jest', 'Vitest'] },
+    { label: 'Infra', items: ['AWS', 'Kubernetes', 'Helm', 'Docker', 'Terraform', 'Karpenter', 'GitOps'] },
+    { label: 'Web3', items: ['EVM / dApps', 'Bitcoin Core', 'Solidity', 'Ethers.js', 'Viem', 'Wagmi'] },
   ] satisfies SkillGroup[],
 
 }
@@ -165,14 +178,6 @@ function Section({ label, delay, children }: SectionProps) {
       <h2 className="cv-section__label">{label}</h2>
       {children}
     </section>
-  )
-}
-
-function GitHubIcon() {
-  return (
-    <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true">
-      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
-    </svg>
   )
 }
 
